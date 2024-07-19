@@ -8,7 +8,6 @@
 import UIKit
 
 class WeatherCell: UICollectionViewCell {
-
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -18,5 +17,23 @@ class WeatherCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func changeColor(){
+        switch titleLabel.text {
+        case "Sun":
+            imageView.tintColor = .orange
+        case "Rain":
+            imageView.tintColor = .blue
+        case "Snow":
+            imageView.tintColor = .white
+        case "Thunderstorm":
+            imageView.tintColor = .purple
+        case "Fog":
+            imageView.tintColor = .darkGray
+        case "Cloudy":
+            imageView.tintColor = .lightGray
+        default:
+            imageView.tintColor = .systemGray2
+        }
+    }
 }

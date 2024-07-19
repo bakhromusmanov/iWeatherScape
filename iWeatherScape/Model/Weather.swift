@@ -10,4 +10,6 @@ import UIKit
 struct Weather {
     let image: UIImage
     let title: String
+    
+    
 }

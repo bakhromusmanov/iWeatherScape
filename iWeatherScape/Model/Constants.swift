@@ -12,7 +12,7 @@ struct K {
     
     static let sunImageTitle = "sun.max.fill"
     static let rainImageTitle = "cloud.rain.fill"
-    static let thundestormImageTitle = "cloud.bolt.fill"
+    static let thunderstormImageTitle = "cloud.bolt.fill"
     static let fogImageTitle = "cloud.fog.fill"
     static let snowImageTitle = "cloud.snow.fill"
     static let cloudyImageTitle = "cloud.fill"
