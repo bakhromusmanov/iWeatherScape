@@ -20,17 +20,17 @@ class WeatherCell: UICollectionViewCell {
     
     func changeColor(){
         switch titleLabel.text {
-        case "Sun":
+        case NSLocalizedString("sun", comment: "Weather condition: sunny"):
             imageView.tintColor = .orange
-        case "Rain":
+        case NSLocalizedString("rain", comment: "Weather condition: rainy"):
             imageView.tintColor = .blue
-        case "Snow":
+        case NSLocalizedString("snow", comment: "Weather condition: snowy"):
             imageView.tintColor = .white
-        case "Thunderstorm":
+        case NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm"):
             imageView.tintColor = .purple
-        case "Fog":
+        case NSLocalizedString("fog", comment: "Weather condition: foggy"):
             imageView.tintColor = .darkGray
-        case "Cloudy":
+        case NSLocalizedString("cloudy", comment: "Weather condition: cloudy"):
             imageView.tintColor = .lightGray
         default:
             imageView.tintColor = .systemGray2

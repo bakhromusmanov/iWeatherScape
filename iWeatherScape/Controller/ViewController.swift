@@ -12,14 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let weather: [Weather] = [
-        Weather(image: UIImage(systemName: K.sunImageTitle)!, title: "Sun"),
-        Weather(image: UIImage(systemName: K.rainImageTitle)!, title: "Rain"),
-        Weather(image: UIImage(systemName: K.thunderstormImageTitle)!, title: "Thunderstorm"),
-        Weather(image: UIImage(systemName: K.fogImageTitle)!, title: "Fog"),
-        Weather(image: UIImage(systemName: K.snowImageTitle)!, title: "Snow"),
-        Weather(image: UIImage(systemName: K.cloudyImageTitle)!, title: "Cloudy")
-        ]
-        
+        Weather(image: UIImage(systemName: K.sunImageTitle)!, title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
+        Weather(image: UIImage(systemName: K.rainImageTitle)!, title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
+        Weather(image: UIImage(systemName: K.thunderstormImageTitle)!, title: NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm")),
+        Weather(image: UIImage(systemName: K.fogImageTitle)!, title: NSLocalizedString("fog", comment: "Weather condition: foggy")),
+        Weather(image: UIImage(systemName: K.snowImageTitle)!, title: NSLocalizedString("snow", comment: "Weather condition: snowy")),
+        Weather(image: UIImage(systemName: K.cloudyImageTitle)!, title: NSLocalizedString("cloudy", comment: "Weather condition: cloudy"))
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00AB88F2C4A7FE60024E687 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00AB88D2C4A7FE60024E687 /* Localizable.strings */; };
 		D09D27462C498CA900759E94 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09D27452C498CA900759E94 /* WeatherCell.xib */; };
 		D09D27472C498CA900759E94 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09D27442C498CA900759E94 /* WeatherCell.swift */; };
 		D0A3D1882C4943D1003C7D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3D1872C4943D1003C7D57 /* AppDelegate.swift */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00AB88E2C4A7FE60024E687 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D00AB8902C4A7FFD0024E687 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		D00AB8912C4A7FFD0024E687 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D09D27442C498CA900759E94 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		D09D27452C498CA900759E94 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		D0A3D1842C4943D1003C7D57 /* iWeatherScape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWeatherScape.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,7 @@
 		D0A3D17B2C4943D1003C7D57 = {
 			isa = PBXGroup;
 			children = (
+				D00AB88D2C4A7FE60024E687 /* Localizable.strings */,
 				D0A3D1862C4943D1003C7D57 /* iWeatherScape */,
 				D0A3D1852C4943D1003C7D57 /* Products */,
 			);
@@ -145,6 +150,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = D0A3D17B2C4943D1003C7D57;
 			productRefGroup = D0A3D1852C4943D1003C7D57 /* Products */;
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00AB88F2C4A7FE60024E687 /* Localizable.strings in Resources */,
 				D0A3D1912C4943D2003C7D57 /* Assets.xcassets in Resources */,
 				D09D27462C498CA900759E94 /* WeatherCell.xib in Resources */,
 				D0A3D1942C4943D2003C7D57 /* Base in Resources */,
@@ -187,10 +194,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D00AB88D2C4A7FE60024E687 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00AB88E2C4A7FE60024E687 /* en */,
+				D00AB8912C4A7FFD0024E687 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D0A3D18D2C4943D1003C7D57 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D0A3D18E2C4943D1003C7D57 /* Base */,
+				D00AB8902C4A7FFD0024E687 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -274,6 +292,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

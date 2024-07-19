@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  iWeatherScape
+
+  Created by Bakhrom Usmanov on 19/07/24.
+  
+*/
+
+"sun" = "Солнечно";
+"rain" = "Дождь";
+"thunderstorm" = "Гроза";
+"fog" = "Туман";
+"snow" = "Снег";
+"cloudy" = "Облачно";
