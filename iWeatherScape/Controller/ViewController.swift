@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var selectedCell: WeatherCell?
+    
     let weather: [Weather] = [
         Weather(image: UIImage(systemName: K.sunImageTitle)!, title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
         Weather(image: UIImage(systemName: K.rainImageTitle)!, title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
@@ -24,10 +26,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .clear
         title = K.appName
         
         collectionView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellWithReuseIdentifier: K.cellIdentifier)
     }
+    
+    func deselectCell(_ cell: WeatherCell) {
+        UIView.animate(withDuration: 0.3) {
+            cell.contentView.transform = .identity
+            cell.titleLabel.alpha = 1.0
+            cell.imageView.tintColor = cell.changeColor()
+            cell.backgroundColor = .clear
+        }
+    }
+    
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -41,8 +54,37 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
         
         cell.titleLabel.text = weather[indexPath.row].title
         cell.imageView.image = weather[indexPath.row].image
-        cell.changeColor()
+        cell.imageView.tintColor = cell.changeColor()
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell {
+            
+            // Deselect the previously selected cell
+            if let selectedCell = self.selectedCell {
+                deselectCell(selectedCell)
+            }
+            
+            // Animate the selection
+            UIView.animate(withDuration: 0.3) {
+                cell.contentView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                cell.titleLabel.alpha = 0.8
+                cell.imageView.tintColor = cell.changeColor()?.withAlphaComponent(0.6)
+                cell.backgroundColor = .systemGray5
+            }
+            
+            //Set cell as selected
+            selectedCell = cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell {
+            // Animate the deselection
+            deselectCell(cell)
+        }
+    }
 }
+
 
