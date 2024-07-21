@@ -13,12 +13,12 @@ class WeatherBrain {
 
     init() {
         weatherData = [
-            Weather(image: UIImage(systemName: K.sunImageTitle)!, title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
-            Weather(image: UIImage(systemName: K.rainImageTitle)!, title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
-            Weather(image: UIImage(systemName: K.thunderstormImageTitle)!, title: NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm")),
-            Weather(image: UIImage(systemName: K.fogImageTitle)!, title: NSLocalizedString("fog", comment: "Weather condition: foggy")),
-            Weather(image: UIImage(systemName: K.snowImageTitle)!, title: NSLocalizedString("snow", comment: "Weather condition: snowy")),
-            Weather(image: UIImage(systemName: K.cloudyImageTitle)!, title: NSLocalizedString("cloudy", comment: "Weather condition: cloudy"))
+            Weather(image: #imageLiteral(resourceName: "Sun"), title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
+            Weather(image: #imageLiteral(resourceName: "Rain"), title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
+            Weather(image: #imageLiteral(resourceName: "Thunderstorm"), title: NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm")),
+            Weather(image: #imageLiteral(resourceName: "Fog"), title: NSLocalizedString("fog", comment: "Weather condition: foggy")),
+            Weather(image: #imageLiteral(resourceName: "Snow"), title: NSLocalizedString("snow", comment: "Weather condition: snowy")),
+            Weather(image: #imageLiteral(resourceName: "Cloud"), title: NSLocalizedString("cloudy", comment: "Weather condition: cloudy"))
         ]
     }
 
@@ -38,10 +38,10 @@ class WeatherBrain {
         checkCellSelection(cell)
         // Animate the selection
         UIView.animate(withDuration: 0.3) {
-            cell.contentView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+            cell.contentView.transform = CGAffineTransform(scaleX: 0.90, y: 0.90)
             cell.titleLabel.alpha = 0.8
-            cell.imageView.tintColor = cell.changeColor()?.withAlphaComponent(0.6)
-            cell.backgroundColor = .systemGray5
+            //cell.imageView.tintColor = cell.changeColor()?.withAlphaComponent(0.6)
+            cell.backgroundColor = #colorLiteral(red: 0.3019607843, green: 0.7451396183, blue: 1, alpha: 1)
         }
     }
     
@@ -49,8 +49,8 @@ class WeatherBrain {
         UIView.animate(withDuration: 0.3) {
             cell.contentView.transform = .identity
             cell.titleLabel.alpha = 1.0
-            cell.imageView.tintColor = cell.changeColor()
-            cell.backgroundColor = .clear
+            //cell.imageView.tintColor = cell.changeColor()
+            cell.backgroundColor = #colorLiteral(red: 0, green: 0.5824528933, blue: 0.9868829846, alpha: 1)
         }
     }
     

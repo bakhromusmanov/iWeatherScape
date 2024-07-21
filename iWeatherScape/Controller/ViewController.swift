@@ -41,6 +41,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
         cell.titleLabel.text = weatherBrain.weatherData[indexPath.row].title
         cell.imageView.image = weatherBrain.weatherData[indexPath.row].image
         cell.imageView.tintColor = cell.changeColor()
+        cell.layer.cornerRadius = 20.0
+        cell.layer.masksToBounds = true
         return cell
     }
     
@@ -52,7 +54,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell {
-            // Animate the deselection
             weatherBrain.deselectCell(cell)
         }
     }
