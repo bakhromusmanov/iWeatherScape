@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var snowView: UIView!
     
     var weatherViews: [UIView]?
+    var currentView: UIView?
     
     //Animation Sun Elements
     @IBOutlet weak var sunImageView1: UIImageView!
@@ -34,6 +35,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var SnowImageView3: UIImageView!
     @IBOutlet weak var SnowImageView4: UIImageView!
     
+    //Animation Fog Elements
+    @IBOutlet weak var fogImageView2: UIImageView!
+    @IBOutlet weak var fogImageView1: UIImageView!
+
+    //Animation Thunder Elements
+    @IBOutlet weak var thunderDarkCloud1: UIImageView!
+    @IBOutlet weak var thunderDarkCloud3: UIImageView!
+    @IBOutlet weak var thunderDarkCloud2: UIImageView!
+    
+    //Animation Cloudy Elements
+    @IBOutlet weak var cloudyCloud1: UIImageView!
+    @IBOutlet weak var cloudyCloud2: UIImageView!
+    @IBOutlet weak var cloudyCloud3: UIImageView!
+    
+    //Animation Rain Elements
+    @IBOutlet weak var rainDarkCloud1: UIImageView!
+    @IBOutlet weak var rainDarkCloud2: UIImageView!
+    @IBOutlet weak var rainDarkCloud3: UIImageView!
+    @IBOutlet weak var rainDrop1: UIImageView!
+    @IBOutlet weak var rainDrop2: UIImageView!
+    @IBOutlet weak var rainDrop3: UIImageView!
+    @IBOutlet weak var rainDrop4: UIImageView!
+    @IBOutlet weak var rainDrop5: UIImageView!
+    @IBOutlet weak var rainDrop6: UIImageView!
+    @IBOutlet weak var rainDrop7: UIImageView!
+    @IBOutlet weak var rainDrop8: UIImageView!
     
     let weatherBrain = WeatherBrain()
     
@@ -59,6 +86,7 @@ class ViewController: UIViewController {
         if let weatherViews = weatherViews {
             let index = weatherBrain.selectRandomCell(collectionView)
             setViewVisability(weatherViews[index])
+            currentView = weatherViews[index]
         }
     }
     
@@ -73,7 +101,6 @@ class ViewController: UIViewController {
         
         enabledView.isHidden = false
     }
-    
     
     
     func startSunAnimation(){
@@ -110,30 +137,34 @@ class ViewController: UIViewController {
         
         viewToMove.layer.add(movementAnimation, forKey: "move")
     }
-
+    
     func animateViewDownMovement(viewToMove: UIImageView, duration: TimeInterval, delay: TimeInterval) {
         let screenHeight = UIScreen.main.bounds.height
         let viewHeight = viewToMove.bounds.height
-
+        
         let fromValue = -viewHeight
         let toValue = screenHeight + viewHeight
-
+        
         let movementAnimation = CABasicAnimation(keyPath: "position.y")
         movementAnimation.fromValue = fromValue
         movementAnimation.toValue = toValue
         movementAnimation.duration = duration
         movementAnimation.repeatCount = .infinity
         movementAnimation.beginTime = CACurrentMediaTime() + delay
-
+        
         viewToMove.layer.add(movementAnimation, forKey: "move")
     }
     
     func switchView(fromView: UIView, toView: UIView) {
+        
+        if fromView == toView{
+            return
+        }
         // Set the initial state of the views
         fromView.alpha = 1.0
         toView.alpha = 0.0
         toView.isHidden = false
-
+        
         // Animate the transition
         UIView.animate(withDuration: 0.5, animations: {
             fromView.alpha = 0.0
@@ -161,9 +192,17 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell {
+        if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell,
+           let weatherViews = weatherViews {
             weatherBrain.selectCell(cell)
-            switchView(fromView: sunView, toView: cloudyView)
+            
+            // Switch the weather view
+            if let currentView = self.currentView {
+                switchView(fromView: currentView, toView: weatherViews[indexPath.row])
+            }
+            
+            // Update the current weather view
+            self.currentView = weatherViews[indexPath.row]
         }
     }
     

@@ -50,7 +50,6 @@ class WeatherBrain {
         UIView.animate(withDuration: 0.3) {
             cell.contentView.transform = .identity
             cell.titleLabel.alpha = 1.0
-            //cell.imageView.tintColor = cell.changeColor()
             cell.backgroundColor = #colorLiteral(red: 0.2625794067, green: 0.7076980792, blue: 1, alpha: 1)
         }
     }
