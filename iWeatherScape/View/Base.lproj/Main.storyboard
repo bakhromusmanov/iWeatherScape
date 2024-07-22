@@ -17,9 +17,284 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-fF-LpT" userLabel="Sun View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3S-qx-Cks" userLabel="Fog View">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fog Background" translatesAutoresizingMaskIntoConstraints="NO" id="DtR-Ha-cv5">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="eOI-9K-otb">
+                                        <rect key="frame" x="71" y="457" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="v34-5i-TZ7">
+                                        <rect key="frame" x="-77" y="-61" width="277" height="277"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-cu-e5l">
+                                        <rect key="frame" x="209" y="-29" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="KeZ-ue-uHI">
+                                        <rect key="frame" x="98" y="-103" width="274" height="274"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fog" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-4P-RDu">
+                                        <rect key="frame" x="98" y="603" width="196" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fog" translatesAutoresizingMaskIntoConstraints="NO" id="UeL-aH-AQs">
+                                        <rect key="frame" x="-11" y="299" width="208" height="208"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fog" translatesAutoresizingMaskIntoConstraints="NO" id="lWk-US-rxU">
+                                        <rect key="frame" x="244" y="404" width="178" height="178"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DtR-Ha-cv5" firstAttribute="leading" secondItem="I3S-qx-Cks" secondAttribute="leading" id="CxU-ck-ZwE"/>
+                                    <constraint firstItem="DtR-Ha-cv5" firstAttribute="top" secondItem="I3S-qx-Cks" secondAttribute="top" id="Isg-gH-O8U"/>
+                                    <constraint firstAttribute="bottom" secondItem="DtR-Ha-cv5" secondAttribute="bottom" id="Mub-nE-7u8"/>
+                                    <constraint firstAttribute="trailing" secondItem="DtR-Ha-cv5" secondAttribute="trailing" id="kf3-NE-sUV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5A-AP-Qhq" userLabel="Rain View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain Background" translatesAutoresizingMaskIntoConstraints="NO" id="sHq-6o-eMH">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="dMS-te-OIb">
+                                        <rect key="frame" x="71" y="457" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="EXJ-js-em8">
+                                        <rect key="frame" x="0.0" y="436" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-nE-qaK">
+                                        <rect key="frame" x="291" y="609" width="196" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="3vg-H1-2Xl">
+                                        <rect key="frame" x="228" y="359" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uBc-Mz-4h0">
+                                        <rect key="frame" x="12" y="-120" width="330" height="330"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="fXu-z3-BRM">
+                                        <rect key="frame" x="210" y="-52" width="286" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="TM0-Fm-cTA">
+                                        <rect key="frame" x="-73" y="-31" width="297" height="297"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-Ma-p0Y">
+                                        <rect key="frame" x="100" y="594" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-OY-FDz">
+                                        <rect key="frame" x="176" y="421" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="iLe-dz-C01">
+                                        <rect key="frame" x="302" y="296" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="8O3-ie-izw">
+                                        <rect key="frame" x="243" y="651" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="DeO-Av-0R3">
+                                        <rect key="frame" x="33" y="339" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="XjR-fE-8LT">
+                                        <rect key="frame" x="318" y="753" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-sx-PXH">
+                                        <rect key="frame" x="110" y="226" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drop" translatesAutoresizingMaskIntoConstraints="NO" id="GER-zr-oZu">
+                                        <rect key="frame" x="12" y="725" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sHq-6o-eMH" secondAttribute="bottom" id="NiO-SB-iEq"/>
+                                    <constraint firstAttribute="trailing" secondItem="sHq-6o-eMH" secondAttribute="trailing" id="Rjv-V7-4Fn"/>
+                                    <constraint firstItem="sHq-6o-eMH" firstAttribute="leading" secondItem="i5A-AP-Qhq" secondAttribute="leading" id="WFg-9Y-tmd"/>
+                                    <constraint firstItem="sHq-6o-eMH" firstAttribute="top" secondItem="i5A-AP-Qhq" secondAttribute="top" id="xW5-BO-bI3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-fF-LpT" userLabel="Cloudy View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloudy Background" translatesAutoresizingMaskIntoConstraints="NO" id="zGp-37-tfw">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="0wE-pb-bgv">
+                                        <rect key="frame" x="71" y="457" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="RyH-BM-bgW">
+                                        <rect key="frame" x="0.0" y="344" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="3Vq-AA-nfO">
+                                        <rect key="frame" x="243" y="430" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="fhI-Xv-sVi">
+                                        <rect key="frame" x="0.0" y="602" width="196" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-6f-hOw">
+                                        <rect key="frame" x="60" y="-100" width="286" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="5oH-H3-rCd">
+                                        <rect key="frame" x="-72" y="-44" width="268" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="hm6-X1-0m9">
+                                        <rect key="frame" x="136" y="-67" width="365" height="365"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zGp-37-tfw" secondAttribute="bottom" id="AMp-13-w8m"/>
+                                    <constraint firstItem="zGp-37-tfw" firstAttribute="top" secondItem="xN2-fF-LpT" secondAttribute="top" id="HtU-8y-SzW"/>
+                                    <constraint firstItem="zGp-37-tfw" firstAttribute="leading" secondItem="xN2-fF-LpT" secondAttribute="leading" id="KKD-PP-EFH"/>
+                                    <constraint firstAttribute="trailing" secondItem="zGp-37-tfw" secondAttribute="trailing" id="Swf-JN-p8g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvH-Wl-ZjO" userLabel="Thunder View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thunder Background" translatesAutoresizingMaskIntoConstraints="NO" id="50F-Ku-wEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thunder" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-CH-vvy">
+                                        <rect key="frame" x="-8" y="137" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thunder" translatesAutoresizingMaskIntoConstraints="NO" id="GOJ-y4-enS">
+                                        <rect key="frame" x="256" y="180" width="124" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="wYQ-Sj-c1l">
+                                        <rect key="frame" x="60" y="-100" width="286" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="7Ve-i6-0fm">
+                                        <rect key="frame" x="-72" y="-44" width="268" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="OYP-3r-nDJ">
+                                        <rect key="frame" x="136" y="-67" width="365" height="365"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thunder" translatesAutoresizingMaskIntoConstraints="NO" id="sgr-Ih-evg">
+                                        <rect key="frame" x="72" y="447.33333333333331" width="249" height="255.66666666666669"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiQ-D1-o3k">
+                                        <rect key="frame" x="0.0" y="326.33333333333337" width="393" height="511.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="6Bk-9A-Wcm">
+                                                <rect key="frame" x="263" y="106.00000000000001" width="150" height="150.33333333333337"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="r99-cJ-Olw">
+                                                <rect key="frame" x="20" y="278" width="196" height="196"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-fG-sqX">
+                                                <rect key="frame" x="20" y="20" width="165" height="165"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SiQ-D1-o3k" firstAttribute="centerY" secondItem="IvH-Wl-ZjO" secondAttribute="centerY" constant="156" id="3yV-58-Mtc"/>
+                                    <constraint firstItem="sgr-Ih-evg" firstAttribute="height" secondItem="IvH-Wl-ZjO" secondAttribute="height" multiplier="0.3" id="448-Rd-4KZ"/>
+                                    <constraint firstItem="50F-Ku-wEb" firstAttribute="leading" secondItem="IvH-Wl-ZjO" secondAttribute="leading" id="4R9-xT-p4n"/>
+                                    <constraint firstItem="SiQ-D1-o3k" firstAttribute="leading" secondItem="IvH-Wl-ZjO" secondAttribute="leading" id="Da1-te-f8k"/>
+                                    <constraint firstAttribute="trailing" secondItem="SiQ-D1-o3k" secondAttribute="trailing" id="OnN-Vy-964"/>
+                                    <constraint firstAttribute="bottom" secondItem="50F-Ku-wEb" secondAttribute="bottom" id="YeR-Ax-AAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="50F-Ku-wEb" secondAttribute="trailing" id="ZQV-Ec-0ih"/>
+                                    <constraint firstItem="sgr-Ih-evg" firstAttribute="centerY" secondItem="IvH-Wl-ZjO" secondAttribute="centerY" multiplier="1.35" id="ePC-9x-FJD"/>
+                                    <constraint firstItem="50F-Ku-wEb" firstAttribute="top" secondItem="IvH-Wl-ZjO" secondAttribute="top" id="kTh-H4-w0I"/>
+                                    <constraint firstItem="sgr-Ih-evg" firstAttribute="leading" secondItem="IvH-Wl-ZjO" secondAttribute="leading" constant="72" id="qcc-3C-Jyq"/>
+                                    <constraint firstAttribute="trailing" secondItem="sgr-Ih-evg" secondAttribute="trailing" constant="72" id="tmi-bE-oNY"/>
+                                    <constraint firstItem="SiQ-D1-o3k" firstAttribute="height" secondItem="IvH-Wl-ZjO" secondAttribute="height" multiplier="0.6" id="yao-OV-0yC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsy-Wn-Slk" userLabel="Sun View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun Background" translatesAutoresizingMaskIntoConstraints="NO" id="2M9-xa-lRt">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="myH-q5-FFK">
+                                        <rect key="frame" x="77.666666666666671" y="477.66666666666669" width="237.66666666666663" height="237.66666666666669"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="myH-q5-FFK" secondAttribute="height" multiplier="1:1" id="x6Z-9Z-N8y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-fS-86J">
+                                        <rect key="frame" x="1125.3333333333333" y="478.33333333333331" width="142.33333333333326" height="142.66666666666669"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ndm-fS-86J" secondAttribute="height" multiplier="1:1" id="Zst-iG-Nng"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rIG-k0-Mpw">
+                                        <rect key="frame" x="-896.66666666666663" y="631" width="186.33333333333337" height="186.33333333333337"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rIG-k0-Mpw" secondAttribute="height" multiplier="1:1" id="Zff-Hc-Bfb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="bK6-rz-Ghq">
+                                        <rect key="frame" x="83.333333333333314" y="-147.66666666666666" width="423" height="423"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bK6-rz-Ghq" secondAttribute="height" multiplier="1:1" id="LM5-nn-5v4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="euv-Zc-D8Z">
+                                        <rect key="frame" x="-888.66666666666663" y="383.33333333333331" width="170.33333333333337" height="170.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="euv-Zc-D8Z" secondAttribute="height" multiplier="1:1" id="TFH-gC-SOe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bK6-rz-Ghq" firstAttribute="height" secondItem="Wsy-Wn-Slk" secondAttribute="height" multiplier="0.496652" id="57y-kM-bTC"/>
+                                    <constraint firstItem="rIG-k0-Mpw" firstAttribute="height" secondItem="Wsy-Wn-Slk" secondAttribute="height" multiplier="0.21875" id="6dK-OX-4e1"/>
+                                    <constraint firstItem="bK6-rz-Ghq" firstAttribute="centerY" secondItem="Wsy-Wn-Slk" secondAttribute="centerY" multiplier="0.15" id="7ec-2g-cny"/>
+                                    <constraint firstItem="myH-q5-FFK" firstAttribute="centerX" secondItem="Wsy-Wn-Slk" secondAttribute="centerX" id="AFb-CH-YRr"/>
+                                    <constraint firstItem="euv-Zc-D8Z" firstAttribute="height" secondItem="Wsy-Wn-Slk" secondAttribute="height" multiplier="0.2" id="Aa7-ei-jA2"/>
+                                    <constraint firstItem="bK6-rz-Ghq" firstAttribute="centerX" secondItem="Wsy-Wn-Slk" secondAttribute="centerX" multiplier="1.5" id="CPH-Fk-gvI"/>
+                                    <constraint firstItem="rIG-k0-Mpw" firstAttribute="centerY" secondItem="Wsy-Wn-Slk" secondAttribute="centerY" multiplier="1.7" id="EUm-Px-D2Y"/>
+                                    <constraint firstItem="euv-Zc-D8Z" firstAttribute="centerY" secondItem="Wsy-Wn-Slk" secondAttribute="centerY" multiplier="1.1" id="HbA-oK-fMC"/>
+                                    <constraint firstItem="myH-q5-FFK" firstAttribute="height" secondItem="Wsy-Wn-Slk" secondAttribute="height" multiplier="0.279018" id="Q1t-cU-bq0"/>
+                                    <constraint firstItem="rIG-k0-Mpw" firstAttribute="centerX" secondItem="Wsy-Wn-Slk" secondAttribute="centerX" constant="-1000" id="V6L-pZ-u7f"/>
+                                    <constraint firstAttribute="trailing" secondItem="2M9-xa-lRt" secondAttribute="trailing" id="Vrq-x6-YvG"/>
+                                    <constraint firstItem="myH-q5-FFK" firstAttribute="centerY" secondItem="Wsy-Wn-Slk" secondAttribute="centerY" multiplier="1.4" id="YWh-jW-krJ"/>
+                                    <constraint firstItem="ndm-fS-86J" firstAttribute="centerX" secondItem="Wsy-Wn-Slk" secondAttribute="centerX" constant="1000" id="ZqG-F7-Pat"/>
+                                    <constraint firstItem="ndm-fS-86J" firstAttribute="centerY" secondItem="Wsy-Wn-Slk" secondAttribute="centerY" multiplier="1.29" id="d1x-CK-kOv"/>
+                                    <constraint firstItem="ndm-fS-86J" firstAttribute="height" secondItem="Wsy-Wn-Slk" secondAttribute="height" multiplier="0.167411" id="ntM-gS-lZ8"/>
+                                    <constraint firstAttribute="bottom" secondItem="2M9-xa-lRt" secondAttribute="bottom" id="pec-hL-RJ2"/>
+                                    <constraint firstItem="euv-Zc-D8Z" firstAttribute="centerX" secondItem="Wsy-Wn-Slk" secondAttribute="centerX" constant="-1000" id="qpK-cv-FK0"/>
+                                    <constraint firstItem="2M9-xa-lRt" firstAttribute="leading" secondItem="Wsy-Wn-Slk" secondAttribute="leading" id="rNc-B8-O6I"/>
+                                    <constraint firstItem="2M9-xa-lRt" firstAttribute="top" secondItem="Wsy-Wn-Slk" secondAttribute="top" id="t3o-De-EUb"/>
+                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-fH-y1M">
                                 <rect key="frame" x="0.0" y="59" width="393" height="220"/>
@@ -35,45 +310,178 @@
                                 <cells/>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iWeatherScape App for VK by Bakhrom Usmanov" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GEZ-Ac-Rh6">
-                                <rect key="frame" x="0.0" y="309" width="393" height="48"/>
+                                <rect key="frame" x="0.0" y="279" width="393" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="jua-Lr-kbD"/>
+                                    <constraint firstAttribute="height" constant="36" id="jua-Lr-kbD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jga-gL-PgC" userLabel="Snow View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snow Background" translatesAutoresizingMaskIntoConstraints="NO" id="BHA-pC-GQE">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="WvB-FU-cbN">
+                                        <rect key="frame" x="60" y="-100" width="286" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rqs-uu-wdE">
+                                        <rect key="frame" x="-137" y="-47" width="337" height="337"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-dP-JGk">
+                                        <rect key="frame" x="208" y="-47" width="284" height="284"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-3y-PWN">
+                                        <rect key="frame" x="71" y="457" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-0w-DHL">
+                                        <rect key="frame" x="35" y="336" width="113" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="y6s-w4-C6o">
+                                        <rect key="frame" x="299" y="430" width="94" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="JwL-xN-PJV">
+                                        <rect key="frame" x="0.0" y="670" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BHA-pC-GQE" firstAttribute="leading" secondItem="jga-gL-PgC" secondAttribute="leading" id="8Vc-Eq-wvh"/>
+                                    <constraint firstAttribute="trailing" secondItem="BHA-pC-GQE" secondAttribute="trailing" id="Fgx-V4-vAH"/>
+                                    <constraint firstAttribute="bottom" secondItem="BHA-pC-GQE" secondAttribute="bottom" id="gHH-d9-LTC"/>
+                                    <constraint firstItem="BHA-pC-GQE" firstAttribute="top" secondItem="jga-gL-PgC" secondAttribute="top" id="hfM-bw-yfc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="GEZ-Ac-Rh6" firstAttribute="top" secondItem="iXh-fH-y1M" secondAttribute="bottom" constant="30" id="0tt-8X-Zal"/>
+                            <constraint firstItem="IvH-Wl-ZjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Sv-cb-nfZ"/>
+                            <constraint firstItem="GEZ-Ac-Rh6" firstAttribute="top" secondItem="iXh-fH-y1M" secondAttribute="bottom" id="0tt-8X-Zal"/>
+                            <constraint firstItem="IvH-Wl-ZjO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2rX-x6-c4k"/>
+                            <constraint firstItem="Wsy-Wn-Slk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5St-m8-KWp"/>
                             <constraint firstItem="GEZ-Ac-Rh6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8fa-bw-MDH"/>
+                            <constraint firstItem="Wsy-Wn-Slk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9xw-PN-261"/>
+                            <constraint firstItem="I3S-qx-Cks" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CaA-s1-Npz"/>
                             <constraint firstItem="iXh-fH-y1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H43-3O-hKH"/>
+                            <constraint firstItem="I3S-qx-Cks" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HX1-XD-zew"/>
+                            <constraint firstItem="jga-gL-PgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JIe-bd-1Tu"/>
                             <constraint firstItem="iXh-fH-y1M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MEv-qa-QjL"/>
+                            <constraint firstItem="i5A-AP-Qhq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P3r-2A-lJN"/>
+                            <constraint firstItem="I3S-qx-Cks" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RC4-q6-bL3"/>
+                            <constraint firstItem="jga-gL-PgC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SFu-xv-UgV"/>
                             <constraint firstItem="xN2-fF-LpT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tfl-z0-dA7"/>
+                            <constraint firstAttribute="bottom" secondItem="I3S-qx-Cks" secondAttribute="bottom" id="Y1Z-54-SeH"/>
+                            <constraint firstItem="i5A-AP-Qhq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YfP-fU-h41"/>
                             <constraint firstItem="iXh-fH-y1M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gS6-T5-Slj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GEZ-Ac-Rh6" secondAttribute="trailing" id="gnc-x3-mQY"/>
+                            <constraint firstAttribute="bottom" secondItem="i5A-AP-Qhq" secondAttribute="bottom" id="iRo-WK-v6O"/>
+                            <constraint firstAttribute="bottom" secondItem="IvH-Wl-ZjO" secondAttribute="bottom" id="m7L-ga-U2c"/>
+                            <constraint firstItem="IvH-Wl-ZjO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pWq-Nk-178"/>
+                            <constraint firstAttribute="bottom" secondItem="Wsy-Wn-Slk" secondAttribute="bottom" id="qIh-4w-hQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="jga-gL-PgC" secondAttribute="bottom" id="qMc-y3-aTq"/>
+                            <constraint firstItem="i5A-AP-Qhq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qcl-6A-0ld"/>
                             <constraint firstAttribute="trailing" secondItem="xN2-fF-LpT" secondAttribute="trailing" id="tKQ-a0-Qba"/>
                             <constraint firstItem="xN2-fF-LpT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vvO-Ea-gco"/>
                             <constraint firstAttribute="bottom" secondItem="xN2-fF-LpT" secondAttribute="bottom" id="xDh-Ia-e1R"/>
+                            <constraint firstItem="Wsy-Wn-Slk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ynH-2T-bbq"/>
+                            <constraint firstItem="jga-gL-PgC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zcO-oN-48c"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="SnowImageView1" destination="1Fy-3y-PWN" id="OJc-Sx-t3V"/>
+                        <outlet property="SnowImageView2" destination="PN7-0w-DHL" id="I6y-Ca-Gx0"/>
+                        <outlet property="SnowImageView3" destination="y6s-w4-C6o" id="XSE-5z-EEu"/>
+                        <outlet property="SnowImageView4" destination="JwL-xN-PJV" id="dRL-dF-Pcg"/>
+                        <outlet property="cloudSunImageView1" destination="ndm-fS-86J" id="ZlR-uA-TWY"/>
+                        <outlet property="cloudSunImageView2" destination="euv-Zc-D8Z" id="WpR-C1-yxv"/>
+                        <outlet property="cloudSunImageView3" destination="rIG-k0-Mpw" id="sgZ-S1-sEC"/>
+                        <outlet property="cloudyView" destination="xN2-fF-LpT" id="a5o-Vy-Dlj"/>
                         <outlet property="collectionView" destination="iXh-fH-y1M" id="pkH-8g-SSy"/>
+                        <outlet property="fogView" destination="I3S-qx-Cks" id="tM4-TW-HAf"/>
+                        <outlet property="rainView" destination="i5A-AP-Qhq" id="K6t-OE-ZiR"/>
+                        <outlet property="snowView" destination="jga-gL-PgC" id="dhw-RT-AQy"/>
+                        <outlet property="sunImageView1" destination="myH-q5-FFK" id="BKK-LU-oyd"/>
+                        <outlet property="sunView" destination="Wsy-Wn-Slk" id="GaV-Rx-doc"/>
+                        <outlet property="thunderView" destination="IvH-Wl-ZjO" id="rSs-wV-RbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="YoJ-8P-uzH" userLabel="Cloudy View">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloudy Background" translatesAutoresizingMaskIntoConstraints="NO" id="tgy-ye-jnK">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="5wz-Ra-sL3">
+                            <rect key="frame" x="71" y="457" width="250" height="250"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-kN-VrL">
+                            <rect key="frame" x="0.0" y="344" width="165" height="165"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-ed-y09">
+                            <rect key="frame" x="243" y="430" width="150" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Hmc-Un-1IR">
+                            <rect key="frame" x="0.0" y="602" width="196" height="196"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-Es-yFr">
+                            <rect key="frame" x="60" y="-100" width="286" height="286"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="nQl-zQ-bHn">
+                            <rect key="frame" x="-72" y="-44" width="268" height="268"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="onl-eI-NjM">
+                            <rect key="frame" x="136" y="-67" width="365" height="365"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="I1u-cL-JV1"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tgy-ye-jnK" secondAttribute="bottom" id="8lr-Pj-3S5"/>
+                        <constraint firstItem="tgy-ye-jnK" firstAttribute="leading" secondItem="YoJ-8P-uzH" secondAttribute="leading" id="FgA-Uc-6wF"/>
+                        <constraint firstAttribute="trailing" secondItem="tgy-ye-jnK" secondAttribute="trailing" id="gP1-46-pVj"/>
+                        <constraint firstItem="tgy-ye-jnK" firstAttribute="top" secondItem="YoJ-8P-uzH" secondAttribute="top" id="rLG-pE-uHs"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="-26.717557251908396" y="2.8169014084507045"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Cloud" width="512" height="512"/>
+        <image name="Cloudy Background" width="300" height="300"/>
+        <image name="Dark Cloud" width="512" height="512"/>
+        <image name="Drop" width="512" height="512"/>
+        <image name="Fog" width="512" height="512"/>
+        <image name="Fog Background" width="300" height="300"/>
+        <image name="Rain Background" width="300" height="300"/>
+        <image name="Snow" width="512" height="512"/>
+        <image name="Snow Background" width="300" height="300"/>
+        <image name="Sun" width="512" height="512"/>
+        <image name="Sun Background" width="300" height="300"/>
+        <image name="Thunder" width="512" height="512"/>
+        <image name="Thunder Background" width="300" height="300"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

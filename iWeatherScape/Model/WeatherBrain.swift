@@ -13,18 +13,18 @@ class WeatherBrain {
 
     init() {
         weatherData = [
-            Weather(image: #imageLiteral(resourceName: "Sun"), title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
-            Weather(image: #imageLiteral(resourceName: "Rain"), title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
-            Weather(image: #imageLiteral(resourceName: "Thunderstorm"), title: NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm")),
-            Weather(image: #imageLiteral(resourceName: "Fog"), title: NSLocalizedString("fog", comment: "Weather condition: foggy")),
-            Weather(image: #imageLiteral(resourceName: "Snow"), title: NSLocalizedString("snow", comment: "Weather condition: snowy")),
-            Weather(image: #imageLiteral(resourceName: "Cloud"), title: NSLocalizedString("cloudy", comment: "Weather condition: cloudy"))
+            Weather(image: #imageLiteral(resourceName: "Sun Icon"), title: NSLocalizedString("sun", comment: "Weather condition: sunny")),
+            Weather(image: #imageLiteral(resourceName: "Rain Icon"), title: NSLocalizedString("rain", comment: "Weather condition: rainy")),
+            Weather(image: #imageLiteral(resourceName: "Thunderstorm Icon"), title: NSLocalizedString("thunderstorm", comment: "Weather condition: thunderstorm")),
+            Weather(image: #imageLiteral(resourceName: "Fog Icon"), title: NSLocalizedString("fog", comment: "Weather condition: foggy")),
+            Weather(image: #imageLiteral(resourceName: "Snow Icon"), title: NSLocalizedString("snow", comment: "Weather condition: snowy")),
+            Weather(image: #imageLiteral(resourceName: "Cloud Icon"), title: NSLocalizedString("cloudy", comment: "Weather condition: cloudy"))
         ]
     }
 
-    func selectRandomCell(_ collectionView: UICollectionView) {
+    func selectRandomCell(_ collectionView: UICollectionView) -> Int {
         let indices = 0..<weatherData.count
-        let randomIndex = indices.randomElement()!
+        let randomIndex = 0
         let indexPath = IndexPath(item: randomIndex, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         collectionView.layoutIfNeeded()
@@ -32,6 +32,7 @@ class WeatherBrain {
         if let cell = collectionView.cellForItem(at: indexPath) as? WeatherCell {
             selectCell(cell)
         }
+        return randomIndex
     }
     
     func selectCell(_ cell: WeatherCell) {
@@ -41,7 +42,7 @@ class WeatherBrain {
             cell.contentView.transform = CGAffineTransform(scaleX: 0.90, y: 0.90)
             cell.titleLabel.alpha = 0.8
             //cell.imageView.tintColor = cell.changeColor()?.withAlphaComponent(0.6)
-            cell.backgroundColor = #colorLiteral(red: 0.3019607843, green: 0.7451396183, blue: 1, alpha: 1)
+            cell.backgroundColor = #colorLiteral(red: 0, green: 0.5824528933, blue: 0.9868829846, alpha: 1)
         }
     }
     
@@ -50,7 +51,7 @@ class WeatherBrain {
             cell.contentView.transform = .identity
             cell.titleLabel.alpha = 1.0
             //cell.imageView.tintColor = cell.changeColor()
-            cell.backgroundColor = #colorLiteral(red: 0, green: 0.5824528933, blue: 0.9868829846, alpha: 1)
+            cell.backgroundColor = #colorLiteral(red: 0.2625794067, green: 0.7076980792, blue: 1, alpha: 1)
         }
     }
     
