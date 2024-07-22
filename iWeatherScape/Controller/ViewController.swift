@@ -3,7 +3,9 @@
 //  iWeatherScape
 //
 //  Created by Bakhrom Usmanov on 18/07/24.
-//
+// Спасибо, что рассматриваете мою кандидатуру
+// к сожалению не успел сделать рефакторинг кода
+// хотел разбить контроллер на WeatherView и WeatherAnimation
 
 import UIKit
 
@@ -75,8 +77,13 @@ class ViewController: UIViewController {
         collectionView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellWithReuseIdentifier: K.cellIdentifier)
         
         
-        //Animation
+        //Start Animation
         startSunAnimation()
+        startCloudyAnimation()
+        startRainAnimation()
+        startSnowAnimation()
+        startThunderAnimation()
+        startFogAnimation()
         
     }
     
@@ -102,13 +109,54 @@ class ViewController: UIViewController {
         enabledView.isHidden = false
     }
     
-    
     func startSunAnimation(){
         //Animation Sun
         animateSunRotation(sunImageView1)
         animateViewHorizontalMovement(viewToMove: cloudSunImageView1, duration: 4, delay: 0, reverse: true)
         animateViewHorizontalMovement(viewToMove: cloudSunImageView2, duration: 5, delay: 0.5, reverse: false)
         animateViewHorizontalMovement(viewToMove: cloudSunImageView3, duration: 6, delay: 1, reverse: true)
+    }
+    
+    func startCloudyAnimation(){
+        animateViewHorizontalMovement(viewToMove: cloudyCloud3, duration: 4, delay: 0, reverse: true)
+        animateViewHorizontalMovement(viewToMove: cloudyCloud1, duration: 5, delay: 0.5, reverse: false)
+        animateViewHorizontalMovement(viewToMove: cloudyCloud2, duration: 6, delay: 1, reverse: true)
+    }
+    
+    func startThunderAnimation(){
+        animateViewHorizontalMovement(viewToMove: thunderDarkCloud1, duration: 4, delay: 0, reverse: true)
+        animateViewHorizontalMovement(viewToMove: thunderDarkCloud2, duration: 5, delay: 0.5, reverse: false)
+        animateViewHorizontalMovement(viewToMove: thunderDarkCloud3, duration: 6, delay: 1, reverse: true)
+    }
+    
+    func startFogAnimation(){
+        animateViewHorizontalMovement(viewToMove: fogImageView1, duration: 4, delay: 0, reverse: true)
+        animateViewHorizontalMovement(viewToMove: fogImageView2, duration: 5, delay: 0.5, reverse: false)
+    }
+    
+    
+    
+    func startRainAnimation(){
+        animateViewHorizontalMovement(viewToMove: rainDarkCloud1, duration: 4, delay: 0, reverse: true)
+        animateViewHorizontalMovement(viewToMove: rainDarkCloud2, duration: 5, delay: 0.5, reverse: false)
+        animateViewHorizontalMovement(viewToMove: rainDarkCloud3, duration: 6, delay: 1, reverse: true)
+        animateViewDownMovement(viewToMove: rainDrop1, duration: 4, delay: 0)
+        animateViewDownMovement(viewToMove: rainDrop2, duration: 5, delay: 1)
+        animateViewDownMovement(viewToMove: rainDrop3, duration: 4, delay: 0.5)
+        animateViewDownMovement(viewToMove: rainDrop4, duration: 5, delay: 0.5)
+        animateViewDownMovement(viewToMove: rainDrop5, duration: 4, delay: 1.5)
+        animateViewDownMovement(viewToMove: rainDrop6, duration: 6, delay: 0.5)
+        animateViewDownMovement(viewToMove: rainDrop7, duration: 6, delay: 1)
+        animateViewDownMovement(viewToMove: rainDrop8, duration: 7, delay: 0.5)
+        
+    }
+    
+    func startSnowAnimation(){
+        //Animation Sun
+        animateSunRotation(SnowImageView1)
+        animateViewDownMovement(viewToMove: SnowImageView2, duration: 4, delay: 0)
+        animateViewDownMovement(viewToMove: SnowImageView3, duration: 5, delay: 1)
+        animateViewDownMovement(viewToMove: SnowImageView4, duration: 4, delay: 0.5)
     }
     
     func animateSunRotation(_ viewToRotate: UIImageView) {

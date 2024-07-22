@@ -24,7 +24,7 @@ class WeatherBrain {
 
     func selectRandomCell(_ collectionView: UICollectionView) -> Int {
         let indices = 0..<weatherData.count
-        let randomIndex = 0
+        let randomIndex = indices.randomElement()!
         let indexPath = IndexPath(item: randomIndex, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         collectionView.layoutIfNeeded()
